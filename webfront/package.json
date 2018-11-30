@@ -1,0 +1,26 @@
+{
+  "name": "easy-pay-webfront",
+  "version": "0.0.1",
+  "description": "Simple and practical payment management platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hstarorg/easy-pay.git"
+  },
+  "keywords": [
+    "wechat",
+    "wechatpay",
+    "alipay",
+    "payment",
+    "payment-platform"
+  ],
+  "author": "Jay.M.Hu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hstarorg/easy-pay/issues"
+  },
+  "homepage": "https://github.com/hstarorg/easy-pay#readme"
+}
