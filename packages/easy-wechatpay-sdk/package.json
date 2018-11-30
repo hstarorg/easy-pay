@@ -1,0 +1,18 @@
+{
+  "name": "easy-wechatpay-sdk",
+  "version": "0.0.1",
+  "description": "Easy pay sdk with wechat.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pay",
+    "wechat",
+    "wechatpay",
+    "easy-pay"
+  ],
+  "author": "Jay.M.Hu",
+  "license": "MIT",
+  "dependencies": {}
+}
