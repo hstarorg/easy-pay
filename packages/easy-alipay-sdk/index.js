@@ -1,3 +1,5 @@
+const AlipaySdk = require('./lib/AlipaySdk');
+
 module.exports = {
-  a: 1
+  AlipaySdk
 };

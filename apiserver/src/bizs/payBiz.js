@@ -1,3 +1,9 @@
-const { a } = require('easy-alipay-sdk');
+const { AlipaySdk } = require('easy-alipay-sdk');
 
-module.exports = {};
+const test = () => {
+  var alipaySdk = new AlipaySdk({ appId: '', privateKey: '' });
+};
+
+module.exports = {
+  test
+};

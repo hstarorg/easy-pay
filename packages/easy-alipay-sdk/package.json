@@ -14,6 +14,7 @@
   "author": "Jay.M.Hu",
   "license": "MIT",
   "dependencies": {
-    "alipay-sdk": "^3.0.4"
+    "alipay-sdk": "^3.0.4",
+    "lodash.pick": "^4.4.0"
   }
 }
