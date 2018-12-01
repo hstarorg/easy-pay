@@ -2,25 +2,37 @@
   "name": "easy-pay-webfront",
   "version": "0.0.1",
   "description": "Simple and practical payment management platform",
-  "main": "index.js",
+  "private": false,
+  "dependencies": {
+    "antd": "^3.10.9",
+    "axios": "^0.18.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1"
+  },
   "scripts": {
-    "test": "test"
+    "analyze": "source-map-explorer build/static/js/1.*",
+    "start": "npm run dev",
+    "dev": "cross-env PORT=5555 react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hstarorg/easy-pay.git"
-  },
-  "keywords": [
-    "wechat",
-    "wechatpay",
-    "alipay",
-    "payment",
-    "payment-platform"
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
   ],
-  "author": "Jay.M.Hu",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hstarorg/easy-pay/issues"
-  },
-  "homepage": "https://github.com/hstarorg/easy-pay#readme"
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.1.6",
+    "babel-plugin-import": "^1.11.0",
+    "cross-env": "^5.2.0",
+    "customize-cra": "^0.2.7",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "react-app-rewired": "^1.6.2",
+    "react-scripts": "2.1.1",
+    "source-map-explorer": "^1.6.0"
+  }
 }
