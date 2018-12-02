@@ -1,6 +1,6 @@
 const ccra = require('customize-cra');
 module.exports = ccra.override(
-  ccra.useEslintRc(),
+  // ccra.useEslintRc(),
   ccra.useBabelRc(),
   ccra.addDecoratorsLegacy(),
   // ccra.fixBabelImports('antd', { libraryDirectory: 'es', style: 'css' }),

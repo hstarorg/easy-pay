@@ -1,23 +1,29 @@
 import React, { Component } from 'react';
-import './App.css';
-import { Button } from 'antd';
+import { Route, Router, Switch } from 'react-router-dom';
 
-class App extends Component {
+import * as historyLib from 'history';
+import { routes } from './router';
+const history = historyLib.createBrowserHistory({
+  getUserConfirmation: (message, callback) => callback(window.confirm(message))
+});
+
+export class App extends Component {
+  componentDidMount() {}
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-            <Button type="primary">Antd Button</Button>
-          </p>
-          <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router history={history}>
+        <Switch>
+          {routes.map((route, index) => (
+            <Route
+              key={index}
+              path={route.path}
+              exact={route.exact}
+              render={props => <route.component {...props} routes={route.routes} parentRoute={route} />}
+            />
+          ))}
+        </Switch>
+      </Router>
     );
   }
 }
-
-export default App;
